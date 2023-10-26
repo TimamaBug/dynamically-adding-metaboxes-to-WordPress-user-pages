@@ -70,7 +70,7 @@ function afficher_metabox_audio($post) {
 
             // Gérer la suppression de fichiers audio
             $('#audio-container').on('click', '.remove-audio-button', function() {
-                $(this).parent().remove();
+                $(this).closest('.audio-row').remove(); // Supprimer la ligne parente
             });
         });
     </script>
